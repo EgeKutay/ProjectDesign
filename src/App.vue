@@ -7,5 +7,9 @@
 </template>
 
 <script setup>
-  //
+import db from "@/plugins/firebase";
+import { useSignalingStore } from "@/stores/signaling";
+
+const signal = useSignalingStore();
+signal.createLobby();
 </script>
